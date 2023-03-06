@@ -1,0 +1,21 @@
+{
+	"name": "practice",
+	"version": "1.0.0",
+	"description": "A space to practice and mess about in React and express",
+	"main": "index.js",
+	"repository": "https://github.com/OscarMensink/expresspractice.git",
+	"author": "OscarMensink <58046618+OscarMensink@users.noreply.github.com>",
+	"license": "MIT",
+	"private": false,
+	"dependencies": {
+		"concurrently": "^7.6.0",
+		"cors": "^2.8.5",
+		"express": "^4.18.2",
+		"nodemon": "^2.0.21"
+	},
+	"scripts": {
+		"client": "yarn --cwd client run start",
+		"server": "nodemon index",
+		"start": "concurrently \"yarn run server\" \"yarn run client\""
+	}
+}
